@@ -250,9 +250,21 @@
         .names-row h3{font-size:24px}
         .details-actions .btn{padding:13px 20px}
       }
+
+      /* language toggle */
+      .lang-toggle{
+        position:fixed;top:calc(14px + env(safe-area-inset-top));right:calc(14px + env(safe-area-inset-right));z-index:60;
+        display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+        border:1px solid rgba(33,29,26,.5);background:rgba(251,247,238,.94);color:var(--ink);
+        font:600 12px/1 "Be Vietnam Pro",sans-serif;letter-spacing:.16em;text-decoration:none;
+        box-shadow:0 4px 14px rgba(33,29,26,.18);
+      }
+      .lang-toggle b{color:#8a6d3b}
+      .lang-toggle:active{transform:scale(.96)}
     </style>
   </head>
   <body>
+    <a class="lang-toggle" href="en/" aria-label="Switch to English"><b>VI</b><span aria-hidden="true">|</span>EN</a>
     <div class="page">
 
       <!-- ============ 1 · COVER : full-screen real photo ============ -->
